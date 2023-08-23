@@ -1,4 +1,6 @@
-# UX Goodness
+---
+title: UX Goodness
+---
 
 ## Screen Capture
 
