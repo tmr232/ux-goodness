@@ -31,6 +31,7 @@ jobs:
       - name: Build Quartz
         run: |
             cd .quartz
+            cp ../quartz.config.ts quartz.config.ts
             npx quartz build -d ../
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
