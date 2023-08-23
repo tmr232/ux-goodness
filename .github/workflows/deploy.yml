@@ -25,7 +25,7 @@ jobs:
           node-version: 18.14
       - name: Install Quartz
         run: |
-            git clone https://github.com/jackyzha0/quartz/tree/v4.0.8 .quartz
+            git clone --depth 1 --branch v4.0.8 https://github.com/jackyzha0/quartz/ .quartz
             cd .quartz
             npm install -g
       - name: Build Quartz
