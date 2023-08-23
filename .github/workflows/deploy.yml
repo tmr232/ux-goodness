@@ -24,7 +24,10 @@ jobs:
         with:
           node-version: 18.14
       - name: Install Quartz
-        run: npm install -g git+https://github.com/jackyzha0/quartz/tree/v4.0.8
+        run: |
+            git clone https://github.com/jackyzha0/quartz/tree/v4.0.8 .quartz
+            cd .quartz
+            npm install -g
       - name: Build Quartz
         run: npx quartz build
       - name: Upload artifact
