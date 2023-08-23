@@ -29,7 +29,10 @@ jobs:
             cd .quartz
             npm install -g
       - name: Build Quartz
-        run: npx quartz build
+        run: |
+            npx quartz build
+            cd .quartz
+            npx quartz build -d ../
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:
